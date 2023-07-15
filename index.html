@@ -66,7 +66,8 @@ const doPost=async(url, req)=>{
 }
 
 window.onload=async()=>{
-  //const tMarkdown = await doGet("https://raw.githubusercontent.com/[user]/[rep]/[baranch]/[file]");
+  //const mdfile = "https://raw.githubusercontent.com/s6334056/private/main/memo.md?token=GHSAT0AAAAAACFEBD56DXXV3S3B6JAXWBTCZFSKXSA";
+  //const tMarkdown = await doGet(mdfile);
   const eMarkdown = document.getElementById('markdown');
   const tMarkdownText = eMarkdown.innerHTML;
   const res = await doPost("https://api.github.com/markdown", {"text": markdownText})
