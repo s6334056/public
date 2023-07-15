@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>s6334056 Public</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css" integrity="sha512-Ya9H+OPj8NgcQk34nCrbehaA0atbzGdZCI2uCbqVRELgnlrh8vQ2INMnkadVMSniC54HChLIh5htabVuKJww8g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+.hide {
+  display: "hidden";
+}
+.markdown-body {
+  box-sizing: border-box;
+  min-width: 200px;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 45px;
+}
+@media (max-width: 767px) {
+  .markdown-body {
+    padding: 15px;
+  }
+}
+</style>
+<body>
+<div id="content" class="markdown-body"></div>
+<div class="hide" style="padding: 10px; border: 1px solid #000;">
+<pre id="markdown">
+# 大見出しサンプル
+概要とか説明とか
+## 見出しサンプル1
+〇〇〇〇〇〇
+## 見出しサンプル2
+〇〇〇〇〇〇
+## 最後に
+〇〇〇〇〇〇
+</pre>
+</div>
+</body>
+<script>
+
+const doGet=async(url)=>{
+  try {
+    const res = await fetch(url)
+    return res.text()
+  } catch(e) {
+    console.log(e)
+    throw e
+  }
+}
+
+const doPost=async(url, req)=>{
+  try {
+    const res = await fetch(url, {
+      "method": "post",
+      "Content-Type": "application/json",
+      "body": JSON.stringify(req),
+    })
+    return res.text()
+  } catch(e) {
+    console.log(e)
+    throw e
+  }
+}
+
+window.onload=async()=>{
+  //const tMarkdown = await doGet("https://raw.githubusercontent.com/[user]/[rep]/[baranch]/[file]");
+  const eMarkdown = document.getElementById('markdown');
+  const tMarkdownText = eMarkdown.innerHTML;
+  const res = await doPost("https://api.github.com/markdown", {"text": markdownText})
+  document.getElementById('content').innerHTML=res;
+}
+
+</script>
+</html>
