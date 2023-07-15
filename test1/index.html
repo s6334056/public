@@ -8,9 +8,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css" integrity="sha512-Ya9H+OPj8NgcQk34nCrbehaA0atbzGdZCI2uCbqVRELgnlrh8vQ2INMnkadVMSniC54HChLIh5htabVuKJww8g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <style>
-.hide {
-  display: none;
-}
 .markdown-body {
   box-sizing: border-box;
   min-width: 200px;
@@ -24,27 +21,7 @@
   }
 }
 </style>
-<body>
-<div id="content" class="markdown-body"></div>
-
-<!--
-<div class="hide" style="padding: 10px; border: 1px solid #000;">
-<pre id="markdown">
-
-# 大見出しサンプル
-概要とか説明とか
-## 見出しサンプル1
-〇〇〇〇〇〇
-## 見出しサンプル2
-〇〇〇〇〇〇
-## 最後に
-〇〇〇〇〇〇
-
-</pre>
-</div>
--->
-
-</body>
+<body></body>
 <script>
 
 const doGet=async(url)=>{
@@ -72,13 +49,12 @@ const doPost=async(url, req)=>{
 }
 
 window.onload=async()=>{
-  //const eMarkdown = document.getElementById('markdown');
-  //const tMarkdown = eMarkdown.innerHTML;
-  //const mdfile = "https://raw.githubusercontent.com/s6334056/public/main/test1/text1.md";
-  const mdfile = "./text1.md";
-  const tMarkdown = await doGet(mdfile);
-  const res = await doPost("https://api.github.com/markdown", {"text": tMarkdown})
-  document.getElementById('content').innerHTML=res;
+  const tMarkdown = await doGet("./index.md");
+  const hContent = await doPost("https://api.github.com/markdown", {"text": tMarkdown})
+  const eContent = document.createElement("div");
+  eContent.innerHTML=hContent;
+  eContent.classList.add("markdown-body");
+  document.querySelector("body").appendChild(eContent);
 }
 
 </script>
