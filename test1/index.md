@@ -1,11 +1,52 @@
-# 大見出しサンプル2
-概要とか説明とか
+# sYamcs Portfolio
 
-## 見出しサンプル1
-〇〇〇〇〇〇
+ご訪問いただき、ありがとうございます！私のプロフィールを紹介いたします。
 
-## 見出しサンプル2
-〇〇〇〇〇〇
+## プロフィール
+学生時代に叔父のプログラムに感動し、将来プログラマーになることを志しました。21世紀が始まった年にIT企業に新卒入社し、主にCSSの業務アプリ開発に従事しています。バックエンドを中心にフロントエンドやインフラ含め、幅広く経験を積んでいます。
+
+## スキルと経験
+
+|実務年数|スキル
+|:-|:-
+|5年～|VBA、VBS、C、C++、COBOL、JAVA、Shell、Apache、Oracle、DB2、Linux(CentOS、RedHat、Ubuntu)、zOS
+|3年～|C#、HTML、JavaScript、CSS、Python、Ruby、PostgreSQL、Git、Subversion
+|実務なし|AWS、GAS、PHP、MySQL、SQLite
+
+これらの実務年数やスキルに加え、独学で長期間勉強しており、実務以上に他の方に教えることができるレベルです。（実際に教えています）
+
+## 作品紹介
+
+### faiChat - AIチャットアプリ
+URL：https://sslab.top/faichat/  
+開発言語等：Python(Django)、HTML/CSS/PureJS  
+faiChatは[A3RT](https://a3rt.recruit.co.jp/)を活用して作成したAIチャットアプリです。会話内容とフィードバックロジックを微調整して、徐々にユーザーに合った回答が得られるようになります。
+
+### Memo - シンプルなメモアプリ
+URL：https://ex1.sslab.top/
+開発言語等：Python、HTML/CSS/PureJS、PWA
+Memoは[bulma](https://bulma.io/)を使って作成したシンプルな1枚のメモアプリです。オフラインで利用できるPWAの基礎を学ぶために制作し、異なる端末間でのデータ引継ぎを容易にしています。
+
+### Maze - 無限に続く迷路アプリ
+URL：https://ex2.sslab.top/
+開発言語等：Python、HTML/CSS/PureJS、PWA
+Mazeはクリアする度に形が変わる無限に続く迷路アプリで、子供向けに制作しました。Canvasを使ってスマートフォンやタブレットで操作できるようにしています。
+
+### SiriTori - 一人用のしりとりアプリ
+URL：https://syamcspublic.github.io/SiriTori/  
+Github：https://github.com/sYamcsPublic/SiriTori/
+開発言語等：GAS、HTML/CSS/PureJS、PWA
+SiriToriは一人用のしりとりアプリで、子供向けに使いやすいUIを重視しています。Googleサジェストからしりとりのネタを収集し、GASを使用してバックエンドを構築しました。
+
+
+### ConsoleJS - webアプリのデバッグを支援するライブラリ
+URL：https://syamcspublic.github.io/ConsoleJS/
+Github：https://github.com/sYamcsPublic/ConsoleJS
+開発言語等：GAS、HTML/CSS/PureJS、PWA
+ConsoleJSはwebアプリのデバッグを支援するライブラリで、"console.log"をフックしてログを表示します。さらに、一部の機能(IndexedDB等)はデバッグ以外の用途にも利用できるようにしました。
+
 
 ## 最後に
-〇〇〇〇〇〇
+これらは私のスキルと経験を示す一部です。もしご興味がありましたら、お気軽にお問い合わせください。お仕事のご依頼は syamcspublic+business@gmail.com までお願いいたします。なお、業務状況によっては返信に数日を要する場合がございますが、ご理解いただければ幸いです。
+
+お時間を割いていただき、ありがとうございました！
