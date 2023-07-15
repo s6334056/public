@@ -70,7 +70,7 @@ window.onload=async()=>{
   //const tMarkdown = await doGet(mdfile);
   const eMarkdown = document.getElementById('markdown');
   const tMarkdownText = eMarkdown.innerHTML;
-  const res = await doPost("https://api.github.com/markdown", {"text": markdownText})
+  const res = await doPost("https://api.github.com/markdown", {"text": tMarkdown})
   document.getElementById('content').innerHTML=res;
 }
 
