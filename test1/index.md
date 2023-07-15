@@ -50,7 +50,7 @@ SiriToriは一人用のしりとりアプリで、子供向けに使いやすい
 ### ConsoleJS - webアプリのデバッグを支援するライブラリ
 URL：https://syamcspublic.github.io/ConsoleJS/
 
-Github：https://github.com/sYamcsPublic/ConsoleJS
+Github：https://github.com/sYamcsPublic/ConsoleJS/
 
 開発言語等：GAS、HTML/CSS/PureJS、PWA
 
